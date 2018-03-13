@@ -56,7 +56,7 @@ int main()
 		for(j=0; j<NROWS; j++)
 		{
 			table[j+NROWS*i] = table[j+NROWS*i] + 3;	// prospelash ANA GRAMMH
-			fprintf(table_fptr, "%lf\n", table[i+NCOLS*j]);	//print in .csv
+			fprintf(table_fptr, "%lf\n", table[j+NROWS*i]);	//print in .csv
 		}
 	}
 	
